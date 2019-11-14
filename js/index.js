@@ -9,7 +9,6 @@ function digitOperPressed(event) {
 
 document.querySelector('.calc .eq')
     .addEventListener('click', eqPressed);
-
 function eqPressed() {
     display.value = eval(display.value);
 }
@@ -21,7 +20,25 @@ function clearLast() {
 }
 document.querySelector('.calc .clear')
     .addEventListener('click', clearAll);
-function clearAll(){
-    const number = display.value;
-    display.value = number.value ="";
+function clearAll() {
+    const num = display.value;
+    display.value = num.value = "";
+}
+document.querySelector('.calc .percent')
+    .addEventListener('click', percentNumber);
+function percentNumber() {
+    const num = display.value;
+    display.value = num / 100;
+}
+document.querySelector('.calc .sqrt')
+    .addEventListener('click', sqrtNumber);
+function sqrtNumber() {
+    const num = display.value;
+    display.value = Math.sqrt(num);
+}
+document.querySelector('.calc .exp')
+    .addEventListener('click', expNumber);
+function expNumber(){
+    const num = display.value;
+    display.value = Math.exp(num);
 }
