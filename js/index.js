@@ -6,11 +6,6 @@ function digitOperPressed(event) {
     const btnText = event.target.innerText;
     display.value += btnText;
 }
-document.querySelector('.calc .opers')
-    .addEventListener('click', oneClick);
-function oneClick() {
-    
-}
 document.querySelector('.calc .eq')
     .addEventListener('click', eqPressed);
 function eqPressed() {
