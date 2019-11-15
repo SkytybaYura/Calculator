@@ -9,10 +9,7 @@ function digitOperPressed(event) {
 document.querySelector('.calc .opers')
     .addEventListener('click', oneClick);
 function oneClick() {
-    if (display.value === opers.length) {
-        const oneClikOpers = display.value;
-        display.value = oneClikOpers.;
-    }
+    
 }
 document.querySelector('.calc .eq')
     .addEventListener('click', eqPressed);
