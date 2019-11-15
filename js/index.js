@@ -6,7 +6,14 @@ function digitOperPressed(event) {
     const btnText = event.target.innerText;
     display.value += btnText;
 }
-
+document.querySelector('.calc .opers')
+    .addEventListener('click', oneClick);
+function oneClick() {
+    if (display.value === opers.length) {
+        const oneClikOpers = display.value;
+        display.value = oneClikOpers.;
+    }
+}
 document.querySelector('.calc .eq')
     .addEventListener('click', eqPressed);
 function eqPressed() {
@@ -38,7 +45,7 @@ function sqrtNumber() {
 }
 document.querySelector('.calc .exp')
     .addEventListener('click', expNumber);
-function expNumber(){
+function expNumber() {
     const num = display.value;
     display.value = Math.exp(num);
 }
